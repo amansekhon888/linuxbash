@@ -1,0 +1,78 @@
+NAME
+
+internsctl - A tool for managing interns
+
+SYNOPSIS
+
+internsctl [COMMAND]
+
+DESCRIPTION
+
+The internsctl tool is a command-line tool for managing interns. It can be used to create and manage intern accounts, list interns, and get information about interns.
+
+COMMANDS
+
+cpu: Get CPU information.
+
+memory: Get memory information.
+
+user: Manage intern accounts.
+
+create: Create a new intern account.
+
+list: List all intern accounts.
+
+list --sudo-only: List all intern accounts with sudo permissions.
+
+file: Get information about files.
+
+getinfo: Get information about a file.
+
+getinfo --size: Get the size of a file.
+
+getinfo --permissions: Get the permissions of a file.
+
+getinfo --owner: Get the owner of a file.
+
+getinfo --last-modified: Get the last modified date of a file.
+
+version: Display the version of the internsctl script.
+
+
+EXAMPLES
+
+To get CPU information, type:
+internsctl cpu
+
+To get memory information, type:
+internsctl memory
+
+To create a new intern account, type:
+internsctl user create <username>
+
+To list all intern accounts, type:
+internsctl user list
+
+To list all intern accounts with sudo permissions, type:
+internsctl user list --sudo-only
+
+To get information about the file /etc/passwd, type:
+internsctl file getinfo /etc/passwd
+
+To get the size of the file /etc/passwd, type:
+internsctl file getinfo --size /etc/passwd
+
+To get the permissions of the file /etc/passwd, type:
+internsctl file getinfo --permissions /etc/passwd
+
+To get the owner of the file /etc/passwd, type:
+internsctl file getinfo --owner /etc/passwd
+
+To get the last modified date of the file /etc/passwd, type:
+internsctl file getinfo --last-modified /etc/passwd
+
+To display the version of the internsctl script, type:
+internsctl --version
+
+AUTHOR 
+     Written By Amandeep Kaur Sekhon
